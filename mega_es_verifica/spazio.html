@@ -3,16 +3,17 @@
 <head>
     <title>Spazio</title>
     <script>
-        // Funzione eseguita quando la pagina è caricata
         window.onload = function() {
-            // Reindirizza a OW.html dopo 1 millisecondo
+            // *** IMPORTANTE: USA window.location.href (o assign) invece di replace ***
             setTimeout(function() {
-                window.location.replace("OW.html");
-            }, 1);
+                window.location.href = "OW.html"; 
+                // Oppure: window.location.assign("OW.html");
+            }, 1); // 1 millisecondo è sufficiente
         };
     </script>
 </head>
 <body>
-    <h1>Caricamento...</h1>
+    <style>body { visibility: hidden; }</style>
+    <h1>Caricamento in corso...</h1>
 </body>
 </html>
