@@ -31,3 +31,14 @@
     align-items: center;
     opacity: 0;
 }
+#backIndex{
+    position: absolute;
+    top: 300px;
+    left: 20%;
+    opacity: 0;
+}
+#backIndex:hover{
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
